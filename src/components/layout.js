@@ -5,14 +5,15 @@ import Header from "./header"
 import "./layout.css"
 import 'typeface-montserrat';
 
+const navigations = ['work', 'agency', 'contact'];
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
-        },
-        navigations
+        }
       }
     }
   `)
@@ -22,7 +23,7 @@ const Layout = ({ children }) => {
       <div className="page-view">
         <div className="page-view-inner">
           <section className="container work-block">{children}</section>
-          <Header siteTitle={data.site.siteMetadata.title} navigations={data.site.navigations} />
+          <Header siteTitle={data.site.siteMetadata.title} navigations={navigations} />
         </div>
       </div>
     </>
