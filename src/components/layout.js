@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
+import Footer from './footer';
 import "./layout.css"
 import 'typeface-montserrat';
 
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <div className="page-view">
         <div className="page-view-inner">
           <section className="container work-block">{children}</section>
+          <Footer />
           <Header siteTitle={data.site.siteMetadata.title} navigations={navigations} />
         </div>
       </div>

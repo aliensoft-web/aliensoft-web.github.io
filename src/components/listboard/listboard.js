@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import './listboard.css';
 import firefox from '../../images/firefox-img.png';
-import netflix from '../../images/netflix.svg';
+import mozillaLabs from '../../images/mozilla-labs.jpg';
 import nbc from '../../images/NBCU.jpg';
 import salesforce from '../../images/Salesforce.jpg';
 import volusion from '../../images/volusion.png';
@@ -18,22 +18,23 @@ const Listboard = () => (
         <Fade bottom>
         <div className="card card-column" style={{'gridRowEnd': 'span 21'}}>
             <div className="content">
+                <a href="/" className="card-video">Mozilla Labs</a>
+                <div className="card-video-inner">
+                    <img src={mozillaLabs} alt="mozilla rebranding" />
+                </div>
+                <span className="card-link">Mozilla Labs</span>
+                <p>Designing a website for innovative projects by Mozilla</p>
+            </div>
+        </div>
+
+        <div className="card card-column" style={{'gridRowEnd': 'span 19', 'marginTop': '30px'}}>
+            <div className="content">
                 <a href="/" className="card-video">Firefox</a>
                 <div className="card-video-inner">
                     <img src={firefox} alt="firefox rebranding" />
                 </div>
                 <span className="card-link">Firefox</span>
                 <p>Official Firefox rebrand</p>
-            </div>
-        </div>
-
-        <div className="card card-column" style={{'gridRowEnd': 'span 18'}}>
-            <div className="content">
-                <a href="/" className="card-video">Netflix</a>
-                <div className="card-video-inner">
-                    <img src={netflix} alt="firefox rebranding" />
-                </div>
-                <p>Series of visual concepts for improving the user experience</p>
             </div>
         </div>
 

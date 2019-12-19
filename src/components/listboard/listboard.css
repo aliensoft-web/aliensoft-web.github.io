@@ -15,6 +15,7 @@
 }
 .card-column .content {
     padding-bottom: 60px;
+    position: relative;
 }
 .listboard a {
     text-decoration: none;
