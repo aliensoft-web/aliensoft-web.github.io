@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './footer.css';
 
-const Footer = () => (
+const Footer = ({ description }) => (
     <div className="to-next-content">
-        <Link to="/work" className="to-next">
+        <Link to={description.url} className="to-next">
             <div className="container">
                 <div className="column">
-                    <span>Learn more about AlienSoft</span>
-                    <h2>Agency</h2>
+                    <span>{description.des}</span>
+                    <h2>{description.title}</h2>
                 </div>
             </div>
         </Link>

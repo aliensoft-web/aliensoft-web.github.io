@@ -8,7 +8,7 @@ import 'typeface-montserrat';
 
 const navigations = ['work', 'agency', 'contact'];
 
-const Layout = ({ children }) => {
+const Layout = ({ children, footerInfo }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
       <div className="page-view">
         <div className="page-view-inner">
           <section className="container work-block">{children}</section>
-          <Footer />
+          <Footer description={footerInfo} />
           <Header siteTitle={data.site.siteMetadata.title} navigations={navigations} />
         </div>
       </div>
