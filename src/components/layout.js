@@ -2,13 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import Footer from './footer';
 import "./layout.css"
 import 'typeface-montserrat';
 
 const navigations = ['work', 'agency', 'contact'];
 
-const Layout = ({ children, footerInfo }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,8 +22,7 @@ const Layout = ({ children, footerInfo }) => {
     <>
       <div className="page-view">
         <div className="page-view-inner">
-          <section className="container work-block">{children}</section>
-          <Footer description={footerInfo} />
+          {children}
           <Header siteTitle={data.site.siteMetadata.title} navigations={navigations} />
         </div>
       </div>

@@ -3,15 +3,19 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import MainHeader from '../components/main-header';
 import Listboard from '../components/listboard';
+import Footer from '../components/footer';
 
 const description = 'We take digital experiences to the next level';
-const footerInfo = { title: "Agency", des: "Learn more about AlienSoft", url: "/agency" }
+const data = { title: "Agency", des: "Learn more about AlienSoft", url: "/agency" }
 
 const Work = () => (
-    <Layout footerInfo={footerInfo}>
+    <Layout>
         <SEO title="Work" />
-        <MainHeader description={description} />
-        <Listboard />
+        <section className="container work-block">
+            <MainHeader description={description} />
+            <Listboard />
+        </section>
+        <Footer data={data} />
     </Layout>
 )
 

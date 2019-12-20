@@ -15,7 +15,8 @@ const Header = ({ siteTitle, navigations }) => (
           </div>
           <div className="nav-stack">{navigations.map((name, i) => (
             <div className="nav-item" key={i}>
-              <Link to={`/${name}`} className="at-left button-secondary is-active">
+              <Link to={`/${name}`}
+               className={`at-left button-secondary is-active`}>
                 <span>{name}</span>
               </Link>
             </div>

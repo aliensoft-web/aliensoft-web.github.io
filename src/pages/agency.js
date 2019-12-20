@@ -3,15 +3,19 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import MainHeader from '../components/main-header';
 import AgencyBlock from '../components/agency-block';
+import Footer from '../components/footer';
 
 const description = 'We are a digital product design agency';
-const footerInfo = { title: "Let's talk about your product", des: "Shall we chat?", url: "/contact" }
+const data = { title: "Let's talk about your product", des: "Shall we chat?", url: "/contact" }
 
 const Agency = () => (
-    <Layout footerInfo={footerInfo}>
+    <Layout>
         <SEO title="Agency" />
-        <MainHeader description={description} />
-        <AgencyBlock />
+        <section className="container work-block no-margin">
+            <MainHeader description={description} />
+            <AgencyBlock />
+        </section>
+        <Footer data={data} />
     </Layout>
 )
 
