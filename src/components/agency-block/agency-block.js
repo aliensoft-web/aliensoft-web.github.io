@@ -1,4 +1,5 @@
 import React from 'react';
+import ClientsList from '../clients-list';
 import Fade from 'react-reveal/Fade';
 import './agency-block.css';
 
@@ -22,6 +23,7 @@ const AgencyBlock = () => (
             </ul>
             <h2>Clients</h2>
             <p>We use our digital product design and development expertise to achieve quantifiable business goals, build a strong design framework early on and empower our clients to continue maintaining a consistent product.</p>
+            <ClientsList />
             <h2>Location</h2>
             <h5>United States</h5>
             <p>851 Burlway Rd, Suite 216, Burlingame, CA 94010</p>

@@ -52,7 +52,7 @@ form .input input + span {
 .how-find-us-block {
     margin-top: 10px;
 }
-.form-info, .form-footer {
+.form-column p.form-info, .form-column p.form-footer {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -73,7 +73,7 @@ form .input input + span {
 }
 .form-footer a {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 .submit-form {
     color: rgba(20, 20, 20, 0.56);
