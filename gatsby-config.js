@@ -29,4 +29,5 @@ module.exports = {
     },
     `gatsby-plugin-emotion`,
   ],
+  pathPrefix: "/aliensoft-web.github.io",
 }
