@@ -1,0 +1,137 @@
+.privacy-block p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.38px;
+}
+.privacy-block .title-text {
+    font-size: 18px;
+}
+.privacy-block h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+}
+.privacy-block h2 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -0.56px;
+}
+.privacy-block h1, .privacy-block h2, .privacy-block h3, .privacy-block h5, .privacy-block ul, .privacy-block p {
+    transition: padding .3s;
+}
+.privacy-block h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+.privacy-block p a {
+    display: inline-block;
+    color: #141414;
+    border-bottom: 3px solid transparent;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.16);
+    text-decoration: none;
+    transition: all .3s;
+}
+.privacy-block p a:hover {
+    color: #2F77EB;
+    box-shadow: 0 3px #2F77EB;
+}
+.agency-socials a {
+    display: inline-block;
+    border: 0;
+    margin-right: 10px;
+    color: #141414;
+    border-bottom: 3px solid transparent;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.16);
+    text-decoration: none;
+    transition: all .3s;
+}
+.agency-socials a:hover {
+    color: #2F77EB;
+    box-shadow: 0 3px #2F77EB;
+}
+
+@media (max-width: 767px) {
+    .privacy-block p {
+        transition: padding .3s;
+    }
+    .privacy-block p {
+        max-width: 882px;
+    }
+    .privacy-block h1, .privacy-block h2, .privacy-block h3, .privacy-block h5, .privacy-block ul, .privacy-block p {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .privacy-block h1 + p {
+        margin-bottom: 30px;
+    }
+    .privacy-block h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        max-width: 882px;
+    }
+    .privacy-block h5 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: -0.38px;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .privacy-block p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.42px;
+    }
+    .privacy-block h1 + p, .privacy-block h5 {
+        margin-top: 60px;
+    }
+    .privacy-block h3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: -0.4px;
+    }
+    .privacy-block h2 {
+        margin-top: 120px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: -0.85px;
+    }
+}
+@media (max-width: 1024px) {
+    .privacy-block h2 {
+        line-height: 40px;
+        letter-spacing: -0.4px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 1279px) and (min-width: 768px) {
+    .privacy-block h2, .privacy-block p {
+        max-width: 914px;
+    }
+    .privacy-block h1, .privacy-block h2, .privacy-block h3, .privacy-block h5, .privacy-block ul, .privacy-block p {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+@media (min-width: 1280px) {
+    .privacy-block h1, .privacy-block h2, .privacy-block h3, .privacy-block h5, .privacy-block ul, .privacy-block p {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    .privacy-block h2, .privacy-block p {
+        max-width: 998px;
+    }
+}

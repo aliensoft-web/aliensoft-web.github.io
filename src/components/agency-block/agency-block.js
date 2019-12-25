@@ -13,13 +13,13 @@ const AgencyBlock = () => (
             <h2>Capabilities</h2>
             <h5>Marketing</h5>
             <ul>
-                <li><a href="/">Branding</a></li>
-                <li><a href="/">Web design</a></li>
+                <li><a href="/category">Branding</a></li>
+                <li><a href="/category">Web design</a></li>
             </ul>
             <h5>Product</h5>
             <ul>
-                <li><a href="/">UI/UX design</a></li>
-                <li><a href="/">App development</a></li>
+                <li><a href="/category">UI/UX design</a></li>
+                <li><a href="/category">App development</a></li>
             </ul>
             <h2>Clients</h2>
             <p>We use our digital product design and development expertise to achieve quantifiable business goals, build a strong design framework early on and empower our clients to continue maintaining a consistent product.</p>

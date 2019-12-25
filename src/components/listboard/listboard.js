@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'gatsby';
 import './listboard.css';
 import firefox from '../../images/firefox-img.png';
 import mozillaLabs from '../../images/mozilla-labs.jpg';
@@ -18,7 +19,7 @@ const Listboard = () => (
         <Fade bottom>
         <div className="card card-column" style={{'gridRowEnd': 'span 21'}}>
             <div className="content">
-                <a href="/" className="card-video">Mozilla Labs</a>
+                <Link to="/project" className="card-video">Mozilla Labs</Link>
                 <div className="card-video-inner">
                     <img src={mozillaLabs} alt="mozilla rebranding" />
                 </div>
@@ -29,7 +30,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 19', 'marginTop': '30px'}}>
             <div className="content">
-                <a href="/" className="card-video">Firefox</a>
+                <Link to="/project" className="card-video">Firefox</Link>
                 <div className="card-video-inner">
                     <img src={firefox} alt="firefox rebranding" />
                 </div>
@@ -40,7 +41,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 21'}}>
             <div className="content">
-                <a href="/" className="card-video">NBCUniversal</a>
+                <Link to="/project" className="card-video">NBCUniversal</Link>
                 <div className="card-video-inner">
                     <img src={nbc} alt="firefox rebranding" />
                 </div>
@@ -51,7 +52,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 22'}}>
             <div className="content">
-                <a href="/" className="card-video">Salesforce</a>
+                <Link to="/project" className="card-video">Salesforce</Link>
                 <div className="card-video-inner">
                     <img src={salesforce} alt="Salesforce rebranding" />
                 </div>
@@ -62,7 +63,7 @@ const Listboard = () => (
         
         <div className="card card-column" style={{'gridRowEnd': 'span 22'}}>
             <div className="content">
-                <a href="/" className="card-video">Volusion</a>
+                <Link to="/project" className="card-video">Volusion</Link>
                 <div className="card-video-inner">
                     <img src={volusion} alt="Volusion rebranding" />
                 </div>
@@ -73,7 +74,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 22'}}>
             <div className="content">
-                <a href="/" className="card-video">Turo</a>
+                <Link to="/project" className="card-video">Turo</Link>
                 <div className="card-video-inner">
                     <img src={turo} alt="Turo rebranding" />
                 </div>
@@ -84,7 +85,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 19'}}>
             <div className="content">
-                <a href="/" className="card-video">Descript</a>
+                <Link to="/project" className="card-video">Descript</Link>
                 <div className="card-video-inner">
                     <img src={descript} alt="Descript rebranding" />
                 </div>
@@ -95,7 +96,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 20'}}>
             <div className="content">
-                <a href="/" className="card-video">Tile</a>
+                <Link to="/project" className="card-video">Tile</Link>
                 <div className="card-video-inner">
                     <img src={tile} alt="Tile rebranding" />
                 </div>
@@ -106,7 +107,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 20'}}>
             <div className="content">
-                <a href="/" className="card-video">Cellebrite</a>
+                <Link to="/project" className="card-video">Cellebrite</Link>
                 <div className="card-video-inner">
                     <img src={cellebrite} alt="Cellebrite rebranding" />
                 </div>
@@ -117,7 +118,7 @@ const Listboard = () => (
 
         <div className="card card-column" style={{'gridRowEnd': 'span 20'}}>
             <div className="content">
-                <a href="/" className="card-video">Wyre</a>
+                <Link to="/project" className="card-video">Wyre</Link>
                 <div className="card-video-inner">
                     <img src={wyre} alt="Wyre rebranding" />
                 </div>
