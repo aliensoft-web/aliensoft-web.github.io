@@ -1,3 +1,7 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  font-size: inherit;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -614,6 +618,25 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
+}
+
+.site_theme--dark {
+  background-color: #121212;
+}
+.site_wrap {
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+
+}
+.container {
+  margin: 0 auto;
+  max-width: calc(100vw - 40px);
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: calc(100vw - 80px);
+  }
 }
 @media only screen and (max-width: 480px) {
   html {

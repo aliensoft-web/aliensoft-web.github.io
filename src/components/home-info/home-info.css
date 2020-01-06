@@ -1,0 +1,96 @@
+.home_latest_news {
+    position: relative;
+    color: #121212;
+    margin-top: 10vh;
+    background-color: #fff;
+}
+.home_latest_news--inner {
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.home_news--see_all {
+    margin-top: 15px!important;
+}
+.home_latest_news--items>.base_block {
+    margin-top: 40px;
+}
+.typo_header-variant_4 .base_link {
+    color: #121212;
+}
+.home_latest_news--items .typo_small {
+    margin-top: 25px;
+    color: #757584;
+}
+.base_link:not(.base_link-child_underline):focus, .base_link:not(.base_link-child_underline):hover {
+    background-size: 0 1px;
+    background-position-x: 100%;
+}
+.base_link:not(.base_link-child_underline).base_link-start_blank:focus,
+.base_link:not(.base_link-child_underline).base_link-start_blank:hover {
+    background-size: 100% 1px;
+    background-position-x: 0;
+}
+
+
+@media (max-width: 599px) {
+    .typo_header-variant_4 {
+        font-size: 23px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+}
+@media (max-width: 899px) {
+    .home_news {
+        background: #fff;
+        color: #000;
+    }
+}
+@media (min-width: 600px) {
+    .home_latest_news--inner {
+        padding: 70px 0;
+    }
+    .home_latest_news--items>.base_block {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 899px) and (min-width: 600px) {
+    .typo_header-variant_4 {
+        font-size: 27px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+}
+@media (min-width: 900px) {
+    .home_latest_news {
+        margin-top: 0;
+    }
+    .home_latest_news--inner {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        width: calc(420px + (100% - 460px)/24*22);
+        padding: 180px 0;
+    }
+    .home_latest_news--title {
+        width: calc(140px + (100% - 420px)/22*8);
+    }
+    .home_latest_news--items {
+        width: calc(260px + (100% - 420px)/22*14);
+        margin-top: 0;
+    }
+    .typo_header-variant_4 {
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 1.15;
+    }
+    .home_latest_news--items>.base_block {
+        margin-top: 80px;
+    }
+    .home_latest_news--items>.base_block:first-child {
+        margin-top: 0;
+    }
+    .typo_header-variant_4 .base_link {
+        font-size: inherit;
+    }
+}
