@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Headroom from 'react-headroom'
+import Fade from 'react-reveal/Fade'
 
 import './header.css';
 
@@ -9,9 +10,7 @@ const Header = ({ siteTitle }) => (
   <Headroom disableInlineStyles>
   <div className="site_header">
     <div className="container">
-      <span className="base_link--wrap skip-to-content">
-        <Link to="/" className="base_link base_link-button">{siteTitle}</Link>
-      </span>
+      <Fade>
       <div className="site_header--nav_bar">
         <div className="site_header--logo">
           <Link to="/" title="Go back to homepage" className="logo">
@@ -74,6 +73,7 @@ const Header = ({ siteTitle }) => (
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   </div>
   </Headroom>

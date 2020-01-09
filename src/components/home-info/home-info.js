@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 import './home-info.css';
 
 const HomeInfo = () => (
     <div className="home_latest_news home_news">
         <div className="container">
             <div className="home_latest_news--inner">
+                <Fade>
                 <div className="home_latest_news--title">
                     <h2 className="typo_header typo_header-variant_4">
                         <span className="text_crop">Latest news</span>
@@ -56,6 +58,7 @@ const HomeInfo = () => (
                         </div>
                     </div>
                 </div>
+            </Fade>
             </div>
         </div>
     </div>

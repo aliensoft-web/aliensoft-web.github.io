@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Fade';
 import './footer.css';
 
 const Footer = () => (
     <div className="page_wrap--footer">
         <footer className="site_footer">
             <div className="container site_footer--inner site_footer-revealed">
+                <Fade bottom>
                 <div className="site_footer--tagline_wrap">
                     <div className="site_footer--tagline_inner">
                         <h3 className="site_footer--tagline_copy">
@@ -35,6 +37,7 @@ const Footer = () => (
                         </ul>
                     </div>
                 </div>
+                </Fade>
             </div>
             <div className="site_footer--end"></div>
         </footer>

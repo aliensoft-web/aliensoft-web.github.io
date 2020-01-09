@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Fade from 'react-reveal/Zoom';
 import './big-features.css';
 import lime from '../../images/lime.jpg';
 import bode from '../../images/bode.jpg';
@@ -8,7 +9,7 @@ import pae_luma from '../../images/pae_luma.jpg';
 import carmel from '../../images/carmel.jpg';
 
 const BigFeatures = () => (
-    <>
+    <Fade>
         <div className="big_feature">
             <div className="container">
                 <Link to="/work" className="base_link base_link-no_underline big_feature--link">
@@ -164,7 +165,7 @@ const BigFeatures = () => (
                 </Link>
             </div>
         </div>
-    </>
+    </Fade>
 );
 
 export default BigFeatures;
